@@ -1,0 +1,11 @@
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+}
+li{
+    cursor: pointer; 
+    margin-left: 0!important; 
+}

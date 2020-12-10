@@ -1,0 +1,20 @@
+<div class="container">
+    <h2 class="center">Top 50 best sounds</h2>
+    <ul class="row">
+        <li class="col s12 m6 l4" *ngFor = "let track of data">
+            <div class="col s12">
+                <div class="card">
+                  <div class="card-image">
+                    <img [src]="track.image[2]['#text']">
+                  </div>
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <a [href]="track.artist.url" target="_blank">{{track.artist.name}}</a>
+                      <span>  - {{track.name}}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </li>
+    </ul>
+</div>

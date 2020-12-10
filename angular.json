@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Room4Player"
+    }
+  },
+  "defaultProject": "Room4Player",
+  "cli": {
+    "analytics": "20d3ec25-1028-4bc6-90bd-dea5fa8c2e6c"
+  }
 }
