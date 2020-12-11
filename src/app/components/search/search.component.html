@@ -1,1 +1,31 @@
-<p>search works!</p>
+<div class="container">  
+    <nav>
+        <div class="nav-wrapper">
+        <form>
+            <div class="input-field">
+            <input id="search" placeholder="Search for songs by title" (input)="getSearch(search)"  #search name="title"  type="search" required>
+            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+            <i class="material-icons">close</i>
+            </div>
+        </form>
+        </div>
+  </nav>
+  <div class="out">
+      <ul *ngIf="found;else notFound" class="row">
+          <li class="col s12 m6 l4" *ngFor="let item of items">
+            <div class="col s12">
+                <div class="card">
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <span> {{item.artist}} - {{item.name}}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </li>
+      </ul>
+      <ng-template #notFound><h2 class="center">Not Found!!!</h2></ng-template>
+      
+
+  </div>
+</div>  
